@@ -1,0 +1,93 @@
+.jobCard {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: start;
+  height: 100%;
+  box-shadow: (0, 0, 0, 0.25) 0px 1px 4px 0px;
+  border-radius: 1.25rem;
+}
+
+.headerContainer {
+  align-items: center;
+}
+
+.logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  object-fit: contain;
+}
+
+.experienceContainer {
+  padding-top: 1rem;
+}
+
+.companyName,
+.experienceLabel {
+  font-weight: 700;
+  color: rgb(112, 112, 112);
+  font-size: medium;
+}
+
+.companyDescription {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.companyDescriptionExpanded {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.aboutCompanyContainer {
+  position: relative;
+}
+
+.aboutCompanyDescription {
+  mask-image: linear-gradient(
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.applyButtonContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.viewJobButton {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: "100%";
+  color: "#4943da";
+  margin-bottom: 1rem;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: scale 0.2s ease-in-out;
+}
+.viewJobButtonExpanded {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: "100%";
+}
+.viewJobButton:hover {
+  scale: 1.1;
+}
+
+.applyButton {
+  width: 100%;
+}
